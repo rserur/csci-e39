@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import autobind from 'class-autobind'
-import mainNavigation from 'mainNavigation'
-import memberList from 'memberList'
-import messageList from 'messageList'
-import newMessageInput from 'newMessageInput'
+// import mainNavigation from 'mainNavigation'
+import memberList from './memberList.jsx'
+// import messageList from 'messageList'
+// import newMessageInput from 'newMessageInput'
 
 class Chat extends React.Component {
 
@@ -54,12 +54,12 @@ class Chat extends React.Component {
 		const {currentText} = this.state
 
 		return <main>
-		<mainNavigation />
-		<header>
-			<h1>Chatroom</h1>
-		</header>
+			<mainNavigation />
+			<header>
+				<h1>Chatroom</h1>
+			</header>
 
-			<memberList />
+			<memberList students={classroom.students}/>
 			<messageList />
 			<newMessageInput />
 		</main>
