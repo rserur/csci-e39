@@ -1,0 +1,24 @@
+@import "./defs";
+
+@mixin errors {
+  color: $error-color;
+  font: $primary-font;
+  font-weight: 800;
+  padding: 1pt 2pt;
+  border-radius: 1pt;
+}
+
+@mixin error-text-span {
+  &::before {
+    content: '⚠️ ';
+  }
+}
+
+.error {
+  @include errors();
+}
+
+.error-message {
+  @include errors();
+  @include error-text-span();  
+}

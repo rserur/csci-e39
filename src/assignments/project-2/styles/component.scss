@@ -1,0 +1,11 @@
+@import "./defs";
+
+.component {
+  background: $primary-color;
+  color: $primary-text-color;
+  font: $primary-font;
+  
+  p {
+    font: $secondary-font;
+  }
+}

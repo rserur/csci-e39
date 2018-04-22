@@ -14,7 +14,7 @@ class MessageCard extends React.Component {
           &nbsp;at&nbsp;
           <span className="created-at">{this.props.createdAt.toISOString()}</span>
         </label>
-        <p>{this.props.text}</p>
+        <p className="message-text">{this.props.text}</p>
       </div>
     )
   }
