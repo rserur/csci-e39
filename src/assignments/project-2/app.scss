@@ -1,0 +1,47 @@
+@import "./styles/defs";
+@import "./styles/component";
+@import "./styles/errors";
+
+:root, body, html {
+  margin: 0;
+  padding: 0;
+  font: $primary-font;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+}
+
+#app {
+  flex: 1;
+  display: flex;
+}
+
+.component {
+  background: $primary-color;
+  color: $primary-text-color;
+  font: $primary-font;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+
+@import './styleguide/samples/samples';
+
+@import "./styleguide/FlyoutMenu";
+@import "./styleguide/MainNavigation";
+@import "./styleguide/MessageCard";

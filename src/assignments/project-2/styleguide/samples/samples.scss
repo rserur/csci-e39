@@ -1,0 +1,49 @@
+@import "../../styles/defs";
+
+.Palette {
+  .palette--color {
+    padding: 0.3rem;
+  }
+  .primary-color {
+    background: $primary-color;
+  }
+  .primary-text-color {
+    background: $primary-color;
+    color: $primary-text-color;
+  }
+  .secondary-color {
+    background: $secondary-color;
+  }
+  .secondary-text-color {
+    background: $secondary-color;
+    color: $secondary-text-color;
+  }
+  .highlight-color {
+    background: $highlight-color;
+  }
+  .error-color {
+    background: $secondary-color;
+    color: $error-color;
+  }
+  .accent-color-red {
+    background: $accent-color-red;
+  }
+  .accent-color-yellow {
+    background: $accent-color-yellow;    
+  }
+  .accent-color-blue {
+    background: $accent-color-blue;
+  }  
+}
+
+.Text {
+  .FlyoutMenu {
+    margin-top: 1rem;
+    
+    .component {
+      background: $accent-color-blue;
+      color: $highlight-color;
+      font: $primary-font;
+    }    
+  }
+}

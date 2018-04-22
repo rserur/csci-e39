@@ -1,0 +1,24 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+
+import { memberPropType } from './FlyoutMenu'
+
+class MemberEntry extends React.Component {
+  constructor (props) {
+    super(props)
+  }
+
+  render () {
+    return (
+      <div className="MemberEntry component">
+        <span>{this.props.member.name}</span>
+      </div>
+    )
+  }
+}
+
+MemberEntry.propTypes = {
+  member: memberPropType
+}
+
+export MessageCard
