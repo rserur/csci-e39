@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Tajawal:300,900&subset=latin-ext');
 
+/* selected with help of https://material.io/color/#!/?view.left=1&view.right=0&primary.color=4A148C&secondary.color=FF80AB&primary.text.color=FAFAFA */
 $headline-font-family: Tajawal, sans-serif;
 
-$primary-color: #EFFFE8;
+$primary-color: #E8EBF8;
 $primary-text-color: #110800;
-$primary-font: 10pt/16pt Tajawal, serif;
+$primary-font: 2vmin Tajawal, serif;
 $primary-font-family: Tajawal, serif;
 
 $secondary-color: #efefef;
 $secondary-text-color: #235789;
-$secondary-font: 10pt/12pt Lora, sans-serif;
+$secondary-font: 2vmin Lora, sans-serif;
 $secondary-font-family: Lora, sans-serif;
 
 $highlight-color: white;
 
-$error-color: white;
-$error-text-color: #C1292E;
+$error-color: #C1292E;
 
-$accent-color-blue: #efefef;
+$accent-color-blue: #235789;
 $accent-color-red: #C1292E;
 $accent-color-yellow: #F1D302;

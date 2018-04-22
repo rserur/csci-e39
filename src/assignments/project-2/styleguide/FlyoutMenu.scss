@@ -1,0 +1,23 @@
+@import "../styles/defs";
+
+.FlyoutMenu {
+  &.component {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    width: 24rem;
+    max-width: 50%;
+  }
+
+  padding: 1em;
+  background: $accent-color-blue;
+  color: $highlight-color;
+  font: $primary-font;
+}
+
+.menu-text {
+  padding-left: 1rem;
+  font-weight: 800;
+  cursor: pointer;  
+}

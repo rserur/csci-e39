@@ -1,0 +1,9 @@
+@import "../styles/defs";
+
+.MainNavigation {
+  padding: 1rem;
+  background: $accent-color-blue;
+  color: $highlight-color;
+  font: $primary-font;
+  font-size: 2rem;
+}
