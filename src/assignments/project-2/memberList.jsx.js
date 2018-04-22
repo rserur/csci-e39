@@ -1,15 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const memberList = ({students}) => {
-    return <section id="members">
-			<h2>Members</h2>
-			<ul>
-				{students.map(({id, name}) =>
-					<li key={id}><span>{name}</span></li>
-				)}
-			</ul>
-    </section>
+const MemberList = ({students}) => {
+  return <section id="members">
+		<h2>Members</h2>
+		<ul>
+			{students.map(({id, name}) =>
+				<li key={id}><span>{name}</span></li>
+			)}
+		</ul>
+  </section>
 }
 
 const studentPropType = PropTypes.shape({
@@ -17,8 +17,8 @@ const studentPropType = PropTypes.shape({
 	name: PropTypes.string.isRequired
 })
 
-memberList.propTypes = {
+MemberList.propTypes = {
 	students: PropTypes.arrayOf(studentPropType).isRequired
 }
 
-export default memberList
+export default MemberList
