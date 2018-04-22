@@ -29,4 +29,4 @@ MessageCard.propTypes = {
   createdAt: PropTypes.instanceOf(Date).isRequired,
 }
 
-export MessageCard
+export default MessageCard

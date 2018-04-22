@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import MessageCard from './styleguide/MessageCard.jsx'
 
 const MessageList = ({chat}) => {
   return <section id='messages'>
@@ -7,8 +8,10 @@ const MessageList = ({chat}) => {
     <ul>
       {chat.messages.map(({id, student, text, createdAt}) =>
         <li key={id}>
-          <label>{student.name} at {createdAt.toISOString()}</label>
-          <p>{text}</p>
+          <MessageCard  student={student}
+                        createdAt={createdAt}
+                        text={text}
+                        />
         </li>
       )}
     </ul>
