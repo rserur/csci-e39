@@ -1,11 +1,11 @@
 import React from 'react'
 
-class mainNavigation extends React.Component {
+class MainNavigation extends React.Component {
+  render() {
+    return 		<nav>
 
+    		</nav>
+  }
 }
 
-render() {
-  return 		<nav>
-
-  		</nav>
-}
+export default MainNavigation
