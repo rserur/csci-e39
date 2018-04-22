@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import io from 'socket.io-client'
 import createState, {connect} from './state'
 import App from './ui/app.jsx'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 const socket = io(__BACKEND__, {query: {studentId: __STUDENT_ID__}})
 const {state_, actions} = createState(socket)
